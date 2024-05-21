@@ -10,7 +10,7 @@ export default function App() {
     let time = setInterval(() => {
       setCurrentTime(new Date())
     }, 1000);
-    return clearInterval(time)
+
   }, [])
   function formatTime(time) {
     return time === 0 ? 12 : time > 12 ? time - 12 : time;
